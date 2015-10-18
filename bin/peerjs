@@ -37,7 +37,7 @@ var path = require('path')
         demand: false,
         alias: 'k',
         description: 'connection key',
-        default: 'peerjs'
+        default: 'dopplr'
       },
       sslkey: {
         demand: false,
@@ -48,9 +48,10 @@ var path = require('path')
         description: 'path to SSL certificate'
       },
       port: {
-        demand: true,
+        demand: false,
         alias: 'p',
-        description: 'port'
+        description: 'port',
+        default: 9000
       },
       path: {
         demand: false,
@@ -59,7 +60,8 @@ var path = require('path')
       },
       allow_discovery: {
         demand: false,
-        description: 'allow discovery of peers'
+        description: 'allow discovery of peers',
+        default: true
       }
     })
     .boolean('allow_discovery')

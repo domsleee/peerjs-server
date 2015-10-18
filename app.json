@@ -1,5 +1,17 @@
 {
   "name": "PeerJS Server",
   "description": "A server side element to broker connections between PeerJS clients.",
-  "website": "http://peerjs.com/"
+  "website": "http://peerjs.com/",
+  "env": {
+    "PORT": {
+      "description": "Server port",
+      "required": false,
+      "default": 9000
+    },
+    "KEY": {
+      "description": "Key for server",
+      "required": true,
+      "default": "peerjs"
+    }
+  }
 }

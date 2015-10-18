@@ -5,13 +5,18 @@
   "env": {
     "PORT": {
       "description": "Server port",
-      "required": false,
+      "required": true,
       "default": 9000
     },
     "KEY": {
       "description": "Key for server",
       "required": true,
       "default": "peerjs"
+    },
+    "ALLOW_DISCOVERY": {
+      "description": "Allow discovery",
+      "required": true,
+      "default": true
     }
   }
 }

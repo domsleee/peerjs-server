@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const generateClientId_1 = require("../services/generateClientId");
 const defaultConfig = {
     host: "::",
     port: 9000,
@@ -11,5 +12,6 @@ const defaultConfig = {
     allow_discovery: false,
     proxied: false,
     cleanup_out_msgs: 1000,
+    generateClientId: generateClientId_1.generateClientId
 };
 exports.default = defaultConfig;

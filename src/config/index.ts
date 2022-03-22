@@ -1,3 +1,5 @@
+import { generateClientId } from "../services/generateClientId";
+
 export interface IConfig {
   readonly host: string;
   readonly port: number;
@@ -27,6 +29,7 @@ const defaultConfig: IConfig = {
   allow_discovery: false,
   proxied: false,
   cleanup_out_msgs: 1000,
+  generateClientId: generateClientId
 };
 
 export default defaultConfig;
